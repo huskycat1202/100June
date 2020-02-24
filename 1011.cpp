@@ -5,7 +5,7 @@ int main(){
 	cin >> t;
 	for(long long int _=0; _<t; _++){
 		long long int x,y;
-		cin >> x >> y;
+		cin >>x>>y;
 		long long int k=y-x-1;
 		for(long long int i=0; ; i++){
 			if(i*i<=4*k+1 && (4*k+1)<(i+1)*(i+1)){
