@@ -1,2 +1,2 @@
 # 100June
-My daily 100June
+* My daily 100June
