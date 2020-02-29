@@ -11,6 +11,6 @@ int main(){
             ans=(ans*n)%10;
             if(!ans) ans=10;
         }
-        cout<<ans<<'\n';
+        cout<<ans<<"\n";
     }
 }

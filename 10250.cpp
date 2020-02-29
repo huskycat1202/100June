@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 int main(){
-	int t,h,w,n; // �� ȣ ���° 
+	int t,h,w,n; // Ãþ È£ ¸î¹øÂ° 
 	int a,b; 
 	cin >> t;
 	while(t--){
@@ -11,10 +11,10 @@ int main(){
 			else cout << h << n/h;
 		}
 		else{
-			a=(n/h)+1; // ȣ  
-			b=n%h; // �� 
+			a=(n/h)+1; // È£  
+			b=n%h; // Ãþ 
 			if(a<10) cout << b << "0" << a;
-			else cout << b << a;
+			else cout << b<< a;
 		}
 	}
 }

@@ -2,7 +2,7 @@
 #include<string>
 using namespace std;
 int main(){
-	int n,m,sum=64,count=0; cin >> n >> m;
+	int n,m,sum=64,count=0; cin >> n>> m;
 	string chess[50];
 	for(int i=0; i<n; i++){
 		cin >> chess[i];
@@ -23,8 +23,8 @@ int main(){
 	cout << sum;	
 }
 /*
-´Ù ¹Þ±â
-8*8 Ä­ ÇÏ³ªÇÏ³ª ³ª´©±â
+ë‹¤ ë°›ê¸°
+8*8 ì¹¸ í•˜ë‚˜í•˜ë‚˜ ë‚˜ëˆ„ê¸°
 for(i++)
 	(j+=2)
 		if((i+j)%2==0 && i,j!=0,0) count++
