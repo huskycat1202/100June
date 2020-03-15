@@ -15,7 +15,6 @@ int main(){
         A+=pow(10,i)*(y[Y-1-i]-'0');
     }
     if(A==0) {cout << "0"; return 0;}
-    cout << A << " ";
     bool x=1;
     while(A!=0){
         if(A%10==0 && x==1){

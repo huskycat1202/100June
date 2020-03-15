@@ -11,8 +11,7 @@ int main(){
             dq.push_back(i);
         }
     }
-    for(int i=a-1; i<b; i++){
-        cout << dq.at(i) << "\n";
+    for(int i=a-1; i<b; i++){}
         sum+=dq.at(i);
     }
     cout << sum;
