@@ -4,8 +4,8 @@ int main(){
 	int n, a, sum=0;
 	cin>> n;
 	for(int i=0; i<5; i++){
-		cin >> a;
+		cin>>a;
 		if(a==n) sum++;
 	}
-	cout << sum; 
+	cout<<sum; 
 }
