@@ -12,7 +12,7 @@ int main(){
 	for(int i=0; i<n; i++){
 		int k, e, m;
 		cin >> x >> k >> e >> m;
-		v.push_back({-k, {e, {-m, x}}});
+		v.push_back({-k,{e,{-m,x}}});
 	}
 	sort(v.begin(), v.end());
 	for(int i=0; i<n; i++){
