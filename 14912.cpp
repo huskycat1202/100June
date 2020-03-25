@@ -1,13 +1,17 @@
 #include<iostream>
 using namespace std;
 int main(){
-    int n,d,sum=0; cin >> n >> d;
-    cout << 1/10;
-    for(int i=1; i<=n; i++){
-        while(i!=0){
-            if(i%10==d){sum++;}
-            i/=10;
+    int n,d; cin >> n >> d;
+    int num=1,cnt=0;
+    while(1){
+        int k=num;
+        while(k>0){
+            if(k%10==d)cnt++;
+            k/=10;
         }
+        if(num==n) break;
+        num++;
     }
-    cout << sum;
+    
+    cout << cnt;
 }

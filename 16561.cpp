@@ -1,4 +1,4 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 int main(){
 	int n,x[3001]={0,0,0,0,0,0,0,0,0,1};
