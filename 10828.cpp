@@ -1,7 +1,7 @@
 #include<iostream>
 #include<algorithm>
 #include<stack>
-using namespace std; // stack <�ڷ���> �̸�; 
+using namespace std; // stack <ÀÚ·áÇü> ÀÌ¸§; 
 int main(){
 	int n, k;
 	string x;
@@ -30,7 +30,7 @@ int main(){
 		}
 		else{
 			if(st.empty()){
-				cout << -1<<'\n';
+				cout <<-1<<'\n';
 			}
 			else cout << st.top()<<'\n';
 		}
