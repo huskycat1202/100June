@@ -1,30 +1,21 @@
 #include<iostream>
 using namespace std;
+int n,s,x[20]={},cnt=0;
+
+void add(bool check, int sum, int now){
+    if(now==n){
+        if(check && sum==s) cnt++;
+        return ;
+    }
+    add(true,sum+x[now],now+1);
+    add(check,sum,now+1);
+   
+}
 int main(){
-    int n,s,x[20]={}; cin >> n >> s;
+    cin >> n >> s;
     for(int i=0; i<n; i++){
         cin >> x[i]; // -7 -3 -2 5 8
     }
-    int sum=0,cnt=0;
-    for(int i=0; i<n; i++){
-        for(int j=i; j<n; j++){
-            for(int _=i; _<=j; _++){
-                sum+=x[_];
-            }
-            if(sum==s) cnt++;
-            sum=0;
-        }
-    }
-    while(next_permutation(x,x+n)){
-        for(int i=0; i<n; i++){
-            for(int j=i; j<n; j++){
-                for(int _=i; _<=j; _++){
-                    sum+=x[_];
-                }
-                if(sum==s) cnt++;
-                sum=0;
-            }
-        }
-    }
+    add(false,0,0);
     cout << cnt;
 }
