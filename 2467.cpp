@@ -18,17 +18,14 @@ int main(){
             if(i!=mid && abs(a+b)>abs(x[i]+x[mid])){
                 a=x[i],b=x[mid];
             }
-            if(x[i]+x[mid]<0){
+            if(x[i]+x[mid]<=0){
                 min=mid+1;
             }
-            else if(x[i]+x[mid]>0){
-                max=mid-1;
-            }
             else{
-                cout << x[i] << " " << x[mid];
-                return 0;
+                max=mid-1;
             }
         }
     }
-    cout << a << " " << b;
+    if(a>b){cout << b << " " << a;}
+    else cout << a << " " << b;
 }
