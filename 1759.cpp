@@ -3,12 +3,18 @@
 using namespace std;
 int main(){
     int l, c; cin >> l >> c;
-    string C, aeiou;
+    string rest, aeiou;
+    char x;
     for(int i=0; i<c; i++){
-        cin >> C[i];
-        if(C[i]=='a' || C[i]=='e' || C[i]=='i' || C[i]=='o' || C[i]=='u'){
-            aeiou.append(C[i]);
-        }
+        cin >> x;
+        if(x=='a' || x=='e' || x=='i' || x=='o' || x=='u') aeiou.append(x);
+        else rest.append(x);
+    }
+    for(int i=0; i<aeiou.length(); i++){
+
     }
 
 }
+/*
+aeiou a i
+rest  t c s w
