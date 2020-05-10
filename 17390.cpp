@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     ios::sync_with_stdio(false); cin.tie(NULL);
     int n,q; cin >> n >> q;
-    int a[300000]={},b[300000]={};
+    int a[300001]={},b[300001]={};
     for(int i=0; i<n; i++){
         cin >> a[i];
     }
