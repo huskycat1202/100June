@@ -1,33 +1,16 @@
-#include <stdio.h>
-#include <string.h>
-
+#include<stdio.h>
 int main(){
-   char a[11];
-   int c=0;
-   int d[5]={};
-   int x=0;
-
-   for(int i=0; i<5; i++){
-       scanf("%s", a);
-       int b=strlen(a);
-
-       for(int y=0; y<b-2; y++){
-           if(a[y]=='F'){
-               if(a[y+1]=='B' && a[y+2]=='I'){
-                   d[i]=1;
-                   x=x+1;
-               }
-           }
-       }
-   }
-
-   for(int e=0; e<5; e++){
-       if(d[e]==1){
-           printf("%d ", e+1);
-       }
-   }
-
-   if(x==0){
-       printf("HE GOT AWAY!");
-   }
+    int n;
+    scanf("%d",&n); //n=5
+    for(int i=0; i<n; i++){
+        printf("%d\n",i+1);
+    }
+    for(int i=1; i<=n; i++){ // 1 2 3 4 5
+        printf("%d\n",i);
+    }
+    int i=0;
+    while(i<n){
+        printf("%d\n",i+1);
+        i++;
+    }
 }
