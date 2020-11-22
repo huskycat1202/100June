@@ -5,5 +5,3 @@ int main(){
     printf("%d", x);
     return 0;
 }
-A 65
-a 97

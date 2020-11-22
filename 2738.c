@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-	int arr[1000][1000]={};
+	int arr[101][101]={};
 	int n, m, x;
 
 	scanf("%d%d",&n,&m);
