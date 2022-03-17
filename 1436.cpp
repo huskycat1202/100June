@@ -13,7 +13,7 @@ int main(){
             }
             k/=10;
         }
-        if(flag==1) cnt++;// 찾았습니다!
+        if(flag==1) cnt++; // 찾았습니다!
         num++; // 다음 수로!
     }
     printf("%d", num-1);

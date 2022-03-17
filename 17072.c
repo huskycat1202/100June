@@ -2,7 +2,7 @@
 int main(){
     int n,m,r,g,b;
     char x[500][500];
-    scanf("%d %d", &n, &m);
+    scanf("%d %d", &n, &m); // 16 11
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
             scanf("%d %d %d", &r, &g, &b);

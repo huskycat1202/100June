@@ -2,8 +2,8 @@
 int main(){
 	int n;
 	scanf("%d",&n);
-	int a=n-1; // 공백 1씩 줄이기 
-	int b=1; // 별 2씩 늘리기 
+	int a = n-1; // 공백 1씩 줄이기
+	int b = 1; // 별 2씩 늘리기
 	
 	for(int i=0; i<n; i++){
 		for(int j=0; j<a; j++){
@@ -13,7 +13,7 @@ int main(){
 			printf("*");
 		}
 		printf("\n");
-		a--;
-		b+=2;
+		a--; // 빈칸 1개 줄이기
+		b+=2; // 별 2개 늘리기
 	}
 }
