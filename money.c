@@ -7,5 +7,7 @@ int main(){
         hour+=h;
         minute+=m;
     }
-    printf("%d", hour*12000+minute*200);
+    hour+=minute/60;
+    minute%=60;
+    printf("%d:%d %d", hour, minute, hour*12000+minute*200);
 }
